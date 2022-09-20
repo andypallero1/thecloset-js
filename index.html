@@ -18,12 +18,14 @@
       <div class="navig">
       <nav>
         <ul>
-        <li><a class="etiqa" href="index.html">INICIO</a></li>
-        <li><a class="etiqa" href="menu/hombre.html">HOMBRE</a></li>
-        <li><a class="etiqa" href="menu/mujer.html">MUJER</a></li>
-        <li><a class="etiqa" href="menu/nosotros.html">NOSOTROS</a></li>
-        <li><a class="etiqa" href="menu/peques.html">PEQUES</a></li>
-        <li class="contacting"><a  class="etiqa" href="menu/contacto.html">CONTACTO</a></li>
+        <button class="menuBoton" onclick="accion()"><img class="imgNav" src="inicio/img/buton-removebg-preview.png" alt=""></button>
+        <li><a class="etiqa desaparece" href="index.html">INICIO</a></li>
+        <li><a class="etiqa desaparece" href="menu/hombre.html">HOMBRE</a></li>
+        <li><a class="etiqa desaparece" href="menu/mujer.html">MUJER</a></li>
+        <li><a class="etiqa desaparece" href="menu/peques.html">PEQUES</a></li>
+        <li><a class="etiqa desaparece" href="menu/nosotros.html">NOSOTROS</a></li>
+        
+        <li class="contacting"><a  class="etiqa desaparece" href="menu/contacto.html">CONTACTO</a></li>
       </ul>
       </div>
       </nav>
@@ -61,34 +63,25 @@
     <div class="grid">
       <div class="publi">
         <p class="parrafoPubli">TODAS LAS OFERTAS EN ROPA DE HOMBRE. NO DESPERDICIES TU OPORTUNIDAD!</p>
-        <u><a class="parrafoPubli" href="menu/hombre.html">VER MÁS</a></u> 
+        <u><a class="parrafoPubli" href="menu/hombre.html" target="_blank" >VER MÁS</a></u> 
       </div>
       <div class="publi">
         <p class="parrafoPubli"> PODES VER TODA LA VARIEDAD EN ROPA DE MUJER CON MUCHISIMAS OFERTAS!!!</p>
-        <u><a class="parrafoPubli" href="menu/mujer.html">VER MÁS</a></u>
+        <u><a class="parrafoPubli" href="menu/mujer.html" target="_blank">VER MÁS</a></u>
       </div>
       <div class="tercerGrid">
-        PODES SEGUIRNOS EN NUESTRAS REDES:
+        TAMBIÉN PODÉS SEGUIRNOS EN:
         <br>
-        <a class="facebook" href="">Facebook</a>
-        <br>
-        <a class="instagram" href="">Instagram</a>
-        <br>
-        <a class="twitter" href="">Twitter</a>
+        <a class="instagram" href="https://www.instagram.com/the_closet.r/" target="_blank">Instagram</a>
         <br>
       </div>
     </div>
-   <div class="contenedor">
-    <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellendus doloremque ut dolorum, labore omnis a voluptatem sapiente autem ab est eveniet quasi repellat ea dolorem cumque debitis! Tempora minima impedit doloribus minus saepe eos suscipit velit, iure sequi, consectetur sed quo corrupti dolorem aperiam dicta. Quis praesentium, ipsam quia soluta minima distinctio quam sequi debitis eum voluptatibus, tempora nesciunt. Temporibus mollitia quos nesciunt ratione repudiandae dolores dignissimos assumenda modi officiis sint omnis quibusdam, veniam labore distinctio, enim cum iure magni sunt dolorem vitae doloribus neque numquam nihil? Nam veritatis optio aliquid quasi deleniti commodi eaque provident suscipit, nulla error dolorum vel nostrum maxime perspiciatis voluptates. Fugit ipsum est corrupti commodi sit incidunt! Pariatur, quae laudantium qui eaque libero alias omnis nostrum voluptates. Delectus, commodi reprehenderit iure veritatis facere amet voluptatum quibusdam quas culpa debitis sunt ea quaerat! Iusto culpa officia quisquam alias laborum corporis molestiae nostrum neque incidunt, accusamus earum quia deserunt consequatur exercitationem expedita, fugiat modi eveniet commodi magnam voluptatum, est distinctio itaque? Ipsa natus soluta, corporis rem consequuntur laudantium cupiditate aut qui. Molestiae amet et aliquam incidunt cumque. Sed nobis porro voluptate velit officiis sunt, quibusdam maiores beatae, expedita dolore similique accusantium fugiat? Tenetur assumenda atque error possimus soluta quae commodi ratione repudiandae consequuntur in! Soluta adipisci repellendus nostrum odio voluptatum doloremque illo, sint molestias pariatur, culpa cum, suscipit repellat. Quo magnam et modi at? Unde distinctio, nobis eius eveniet quos incidunt debitis placeat, totam obcaecati sunt autem laudantium rerum hic, assumenda repellat et rem expedita saepe id ab cupiditate est recusandae natus! Ullam minus, nostrum quis provident, odit ducimus perspiciatis autem repellat animi doloribus similique et, laudantium quidem magni inventore voluptas aliquam. Tempora consequatur minima vero deleniti sunt, nihil nam sapiente, dolores ipsum impedit cumque veritatis necessitatibus quos fugit quisquam aliquam earum quam qui hic enim!
-    </p>
-   </div>
     <br />
     <br />
     <br />
 
     <div class="cajaFixed">
-    <a href="https://wa.me/5492345516303?text=Habla%20con%20nosotros" target="_blank"><img src="../inicio/img/whatsapp (1).png" alt=""></a>
+    <a href="https://wa.me/5492345454379?text=Hola!%20quiero%20hacer%20una%20consulta.." target="_blank"><img src="../inicio/img/whatsapp (1).png" alt=""></a>
     </div>
     <div class="footer">
       <footer>
@@ -99,5 +92,13 @@
     </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script>
+    function accion() {
+      var ancla = document.getElementsByClassName('etiqa');
+      for (let i = 0; i < ancla.length; i++) {
+        ancla[i].classList.toggle('desaparece');
+      }
+    }
+  </script>
   </body>
 </html>
