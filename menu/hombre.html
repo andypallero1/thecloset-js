@@ -14,18 +14,19 @@
     <header>
       <div class="titulo">
         <h1 class="titulo-indumentaria">THE CLOSET</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a class="etiqa" href="../index.html">INICIO</a></li>
-          <li><a class="etiqa" href="hombre.html">HOMBRE</a></li>
-          <li><a class="etiqa" href="mujer.html">MUJER</a></li>
-          <li><a class="etiqa" href="peques.html">PEQUES</a></li>
-          <li><a class="etiqa" href="nosotros.html">NOSOTROS</a></li>
-          
-          <li class="contacting"><a class="etiqa" href="contacto.html">CONTACTO</a></li>
-        </ul>     
-      </nav>
+        <div class="navig">
+          <nav>
+            <ul>
+            <button class="menuBoton" onclick="accion()"><img class="imgNav" src="../inicio/img/buton-removebg-preview.png" alt=""></button>
+            <li><a class="etiqa desaparece" href="../index.html">INICIO</a></li>
+            <li><a class="etiqa desaparece" href="hombre.html">HOMBRE</a></li>
+            <li><a class="etiqa desaparece" href="mujer.html">MUJER</a></li>
+            <li><a class="etiqa desaparece" href="peques.html">PEQUES</a></li>
+            <li><a class="etiqa desaparece" href="nosotros.html">NOSOTROS</a></li>
+            
+            <li class="contacting"><a  class="etiqa desaparece" href="contacto.html">CONTACTO</a></li>
+          </ul>
+          </div>
     </header>
     <main>
           <div class="publicidad--">
@@ -70,5 +71,13 @@
     </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script>
+    function accion() {
+      var ancla = document.getElementsByClassName('etiqa');
+      for (let i = 0; i < ancla.length; i++) {
+        ancla[i].classList.toggle('desaparece');
+      }
+    }
+  </script>  
   </body>
 </html>

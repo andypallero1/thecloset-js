@@ -14,46 +14,50 @@
     <header>
       <div class="titulo">
         <h1 class="titulo-indumentaria">THE CLOSET</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a class="etiqa" href="../index.html">INICIO</a></li>
-          <li><a class="etiqa" href="hombre.html">HOMBRE</a></li>
-          <li><a class="etiqa" href="mujer.html">MUJER</a></li>
-          <li><a class="etiqa" href="peques.html">PEQUES</a></li>
-          <li><a class="etiqa" href="nosotros.html">NOSOTROS</a></li>
-
-          <li class="contacting"><a class="etiqa" href="contacto.html">CONTACTO</a></li>
-        </ul>     
-      </nav>
-      <br>
-      <br>
-      <br>
+        <div class="navig">
+          <nav>
+            <ul>
+            <button class="menuBoton" onclick="accion()"><img class="imgNav" src="../inicio/img/buton-removebg-preview.png" alt=""></button>
+            <li><a class="etiqa desaparece" href="../index.html">INICIO</a></li>
+            <li><a class="etiqa desaparece" href="hombre.html">HOMBRE</a></li>
+            <li><a class="etiqa desaparece" href="mujer.html">MUJER</a></li>
+            <li><a class="etiqa desaparece" href="peques.html">PEQUES</a></li>
+            <li><a class="etiqa desaparece" href="nosotros.html">NOSOTROS</a></li>
+            
+            <li class="contacting"><a  class="etiqa desaparece" href="contacto.html">CONTACTO</a></li>
+          </ul>
+          </div>
     </header>
     <main>
-        <img src="../inicio/img/niños.jpg" alt="img ropa hombre" class="img-ropa">
-        <div class="flexpa col-12 col-sm-6">
-
-          <div class="flexhi">
-            <p class="producto">No se encuentra disponible el producto</p>
-          </div>
-          <div class="flexhi">
-            <p class="producto">No se encuentra disponible el producto</p>
-          </div>
-          <div class="flexhi">
-            <p class="producto">No se encuentra disponible el producto</p>
-          </div>
-          <div class="flexhi">
-            <p class="producto">No se encuentra disponible el producto</p>
-          </div>
-          <div class="flexhi">
-            <p class="producto">No se encuentra disponible el producto</p>
-          </div>
-          <div class="flexhi">
-            <p class="producto">No se encuentra disponible el producto</p>
-          </div>
-  
-        </div>
+      <div class="publicidad--">
+        <p class="text--">ACEPTAMOS TARJETA DE DÉBITO Y CRÉDITO</p>
+        <p  class="text--">ADEMÁS, 10% DE DESCUENTO EN EFECTIVO!</p>
+      </div>
+      <div class="flexhi">
+        <img class="imgRopa" src="../inicio/PRODUCTOSSS/PEQUES/BUZOPEQUE.png" alt="">
+        <p><a class="botonRopa" href="" target="_blank"> BUZO </a></p>
+        <p class="cuotas-s-i">3 cuotas sin interés.</p>
+        <p class="precio">$0000</p>
+      </div>
+      <div class="flexhi">
+        <img class="imgRopa" src="../inicio/PRODUCTOSSS/PEQUES/CONJUNTO.png" alt="">
+        <p><a class="botonRopa" href="" target="_blank"> CONJUNTO </a></p>
+        <p class="cuotas-s-i">3 cuotas sin interés.</p>
+        <p class="precio">$0000</p>
+      </div>
+      <div class="flexhi">
+        <img class="imgRopa" src="../inicio/PRODUCTOSSS/PEQUES/REMERITAS.png" alt="">
+        <p><a class="botonRopa" href="" target="_blank"> REMERITAS </a></p>
+        <p class="cuotas-s-i">3 cuotas sin interés.</p>
+        <p class="precio">$0000</p>
+      </div>
+      <div class="flexhi">
+        <img class="imgRopa" src="../inicio/PRODUCTOSSS/PEQUES/REMEYPANT.png" alt="">
+        <p><a class="botonRopa" href="" target="_blank"> REMERA Y PANTALON </a></p>
+        <p class="cuotas-s-i">3 cuotas sin interés.</p>
+        <p class="precio">$0000</p>
+      </div>
+    </div>
     </main>
     <div class="cajaFixed">
       <a href="https://wa.me/5492345516303?text=Habla%20con%20nosotros" target="_blank"><img src="../inicio/img/whatsapp (1).png" alt=""></a>
@@ -67,5 +71,13 @@
     </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script>
+    function accion() {
+      var ancla = document.getElementsByClassName('etiqa');
+      for (let i = 0; i < ancla.length; i++) {
+        ancla[i].classList.toggle('desaparece');
+      }
+    }
+  </script>
   </body>
 </html>
