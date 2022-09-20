@@ -25,7 +25,7 @@
   background-size: cover; }
 
 body {
-  background-color: gainsboro;
+  background-color: rgba(255,255,255,1) !important;
   position: relative; }
 
 main {
@@ -84,7 +84,7 @@ ul li a:hover {
 
 .grid div {
   padding: 4em;
-  border: 2px solid white; }
+  border: 2px solid rgba(255,255,255,1); }
 
 .footer {
   padding: 1em;
@@ -93,8 +93,8 @@ ul li a:hover {
   text-align: center; }
 
 .flexpa {
-  background-color: white;
-  border: 3px solid white;
+  background-color: rgba(255,255,255,1);
+  border: 3px solid rgba(255,255,255,1);
   width: 100%;
   height: 500px;
   margin: 10px;
@@ -254,7 +254,7 @@ $estilos: (
 
 .tercerGrid {
   font-family: 'Cormorant SC', serif;
-  background-color: white !important;
+  background-color: rgba(255,255,255,1) !important;
   @extend .publi;
   color: map-get($estilos, lcolor );
   font-size: 2rem;
@@ -317,6 +317,6 @@ $estilos: (
 
 
 .body-cont{
-  background-color: #e0d8d8;
+  background-color: #d5cfcf !important;
   
 }

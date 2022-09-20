@@ -24,7 +24,7 @@
   background-size: cover; }
 
 body {
-  background-color: gainsboro;
+  background-color: white !important;
   position: relative; }
 
 main {
@@ -252,4 +252,4 @@ h3 {
   text-align: center; }
 
 .body-cont {
-  background-color: #e0d8d8; }
+  background-color: #d5cfcf !important; }
