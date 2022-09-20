@@ -139,14 +139,15 @@ ul li a:hover {
   .grid div {
     padding: 1em;
     border: 2px solid white; } 
-    ul li a {
-      color: white;
-      text-decoration: none;
-      display: block;
-      padding: 20px 10px; }
+   ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 10px; }
     
-      ul li {
-        display: block; }
+   ul li {
+    display: block; }
+
 
 }
 
@@ -244,7 +245,7 @@ $estilos: (
   background-color: white !important;
   @extend .publi;
   color: map-get($estilos, lcolor );
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .bodyContacto{
