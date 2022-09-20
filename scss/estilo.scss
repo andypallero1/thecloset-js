@@ -146,9 +146,11 @@ ul li a:hover {
     padding: 20px 10px; }
     
    ul li {
-    display: block; }
+    display: block;}
 
-
+  .text--{
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -265,8 +267,10 @@ $estilos: (
 }
 
 .publicidad--{
-  padding: 40px;
-  @extend .footer;
+  padding: 20px;
+  border: #2e2d2d;
+  background-color: #2e2d2d;
+
 }
 
 .text--{

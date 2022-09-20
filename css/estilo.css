@@ -83,7 +83,7 @@ ul li a:hover {
   padding: 4em;
   border: 2px solid white; }
 
-.footer, .publicidad-- {
+.footer {
   padding: 1em;
   border: 3px solid black;
   background-color: #2e2d2d;
@@ -135,7 +135,9 @@ ul li a:hover {
     display: block;
     padding: 20px 10px; }
   ul li {
-    display: block; } }
+    display: block; }
+  .text-- {
+    font-size: 10px; } }
 
 @media (max-width: 768px) {
   .producto {
@@ -212,7 +214,9 @@ h3 {
   font-size: 30px; }
 
 .publicidad-- {
-  padding: 40px; }
+  padding: 20px;
+  border: #2e2d2d;
+  background-color: #2e2d2d; }
 
 .text-- {
   color: #a19999;
