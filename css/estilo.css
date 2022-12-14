@@ -1,251 +1,109 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap");
-.titulo-indumentaria {
-  color: black;
-  font-size: 100px;
-  text-align: center;
-  font-family: 'Cormorant SC', serif;
-  margin: auto;
-  padding: 80px;
-  font-weight: bold; }
+/* GENERICOS */
+.display-none {
+  display: none; }
 
-@media (max-width: 576px) {
-  .titulo-indumentaria {
-    font-size: 50px !important;
-    padding: 10px; } }
-
-@media (min-width: 576px) {
-  .titulo-indumentaria {
-    font-size: 100px !important;
-    padding: 30px; } }
-
-.titulo {
-  background-image: url("../inicio/img/background1.jpg");
-  background-repeat: no-repeat;
+/* PORTADA */
+#front {
+  z-index: 4;
+  background-image: url(../images/background1.jpg);
   background-size: cover; }
 
-body {
-  background-color: white !important;
-  position: relative; }
+.cover-container {
+  background: rgba(28, 28, 28, 0.7); }
 
-main {
-  text-align: center; }
+/* LOG IN */
+#log-in-container {
+  z-index: 5;
+  background: rgba(28, 28, 28, 0.9);
+  overflow-y: scroll; }
 
-nav {
-  background-color: black; }
+/* SETTINGS */
+#settings-container {
+  z-index: 6;
+  background: rgba(28, 28, 28, 0.9);
+  overflow-y: scroll; }
 
-.menuBoton {
-  display: none;
-  width: 9%;
-  background-color: black; }
+/* MENU - PEDIDO */
+#nav-bar {
+  z-index: 1; }
 
-.imgNav {
-  width: 100%;
-  background-color: black; }
+#order-container {
+  z-index: 1;
+  background: rgba(28, 28, 28, 0.9);
+  overflow-y: scroll; }
 
-ul {
-  marker: none;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-ul li {
-  display: inline-block; }
-
-ul li a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 20px 40px; }
-
-ul li a:hover {
-  background-color: gray; }
-
-.contenedor {
-  border: 5px black solid;
-  margin: 20px; }
-
-.contenedor p {
-  margin: 20px; }
-
-.cajaFixed {
+#show-order-btn {
+  z-index: 2;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  object-fit: 30px; }
+  bottom: 1rem;
+  right: 1rem; }
 
-.cajaFixed img {
-  width: 80px; }
+#counter {
+  z-index: 3;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem; }
 
-.grid {
-  display: grid; }
+#send-order-btn {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem; }
 
-.grid div {
-  padding: 4em;
-  border: 2px solid white; }
+#alert {
+  z-index: 3;
+  position: fixed;
+  bottom: 3rem;
+  right: 1rem;
+  animation: alert-out 0.7s 0.7s ease forwards; }
 
-.footer {
-  padding: 1em;
-  border: 3px solid black;
-  background-color: #2e2d2d;
-  text-align: center; }
+.eliminar, #home-btn {
+  cursor: pointer; }
 
-.flexpa {
-  background-color: white;
-  border: 3px solid white;
-  width: 100%;
-  height: 500px;
-  margin: 10px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%; }
+@keyframes alert-out {
+  100% {
+    opacity: 0;
+    transform: translateY(90%) translateX(45%) scale(0); } }
 
-.flexhi {
-  margin: 50px;
-  justify-content: space-around;
-  align-items: center; }
+.to-up {
+  animation: to-up 1s ease;
+  animation-fill-mode: forwards; }
 
-.producto {
-  text-align: center;
-  margin-top: 80px; }
+@keyframes to-up {
+  100% {
+    transform: translateY(-100%); } }
 
-@media (max-width: 576px) {
-  .img-ropa {
-    max-width: 80%; } }
+.from-up {
+  animation: from-up 1s ease;
+  animation-fill-mode: forwards; }
 
-@media (max-width: 768px) {
-  .producto {
-    font-size: 35px;
-    margin-top: 80px; }
-  .menuBoton {
-    display: inline-block; }
-  .desaparece {
-    display: none; }
-  .flexhi {
-    width: 100%;
-    margin-top: 20px;
-    margin-top: 20px;
-    margin-left: 0%; }
-  .imgRopa {
-    width: 100%; }
-  .menuBoton {
-    width: 20%; }
-  .grid div {
-    padding: 1em;
-    border: 2px solid white; }
-  ul li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 20px 10px; }
-  ul li {
-    display: block; }
-  .text-- {
-    font-size: 10px; }
-  .form-cont {
-    height: 515px;
-    text-align: center;
-    margin-top: 170px; } }
+@keyframes from-up {
+  0% {
+    transform: translateY(-100%); }
+  100% {
+    transform: translateY(0%); } }
 
-@media (min-width: 767px) {
-  .contacting {
-    float: right; }
-  .flexpa {
-    height: 100%; }
-  .form-cont {
-    text-align: center;
-    height: 400px;
-    margin-top: 170px; } }
+.card:hover {
+  animation: card-scale 1s ease;
+  animation-fill-mode: forwards; }
 
-h3 {
-  color: azure;
-  font-size: 1rem !important; }
+@keyframes card-scale {
+  100% {
+    transform: scale(1.05); } }
 
-.nosotrast {
-  font-weight: bold;
-  text-align: center;
-  font-size: 27px; }
+.out-item {
+  animation: out-item 1s 0s ease;
+  animation-fill-mode: forwards; }
 
-@media (max-width: 680px) {
-  .etiqa {
-    font-size: 8px;
-    padding: 20px 10px; } }
+@keyframes out-item {
+  100% {
+    opacity: 0;
+    transform: translatex(-100%); } }
 
-@media only screen and (max-width: 767px) {
-  body h1 {
-    font-size: 70px; }
-  body h3 {
-    font-size: 25px; } }
+.send-item {
+  animation: send-item 1s 0s ease;
+  animation-fill-mode: forwards; }
 
-.facebook {
-  color: #252585; }
-
-.instagram {
-  color: #8f1d21; }
-
-.twitter {
-  color: #5393cc; }
-
-.publi, .tercerGrid {
-  background-color: black;
-  text-align: center; }
-
-.parrafoPubli {
-  color: grey;
-  font-size: 20px; }
-
-.tercerGrid {
-  font-family: 'Cormorant SC', serif;
-  background-color: white !important;
-  color: grey;
-  font-size: 2rem; }
-
-.bodyContacto {
-  text-align: center; }
-
-.botonRopa {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  color: black; }
-
-.precio {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  font-size: 25px; }
-
-.publicidad-- {
-  padding: 20px;
-  border: #2e2d2d;
-  background-color: #2e2d2d; }
-
-.text-- {
-  color: #a19999;
-  font-weight: bold; }
-
-.imgRopa {
-  margin-bottom: 30px; }
-
-.cuotas-s-i {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  color: #7a7474; }
-
-.horarios {
-  margin: 5px #b5b0b0 solid;
-  border-radius: 2px;
-  background-color: #b5b0b0;
-  padding: 40px; }
-
-.text-nos {
-  color: #7d4a52;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center; }
-
-.body-cont {
-  background-color: #d5cfcf !important; }
+@keyframes send-item {
+  100% {
+    opacity: 0;
+    transform: translatex(100%); } }
